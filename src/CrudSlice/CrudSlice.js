@@ -23,9 +23,6 @@ export const CrudSlice = createSlice({
     },
     edit: (state, action) => {
       const edit = state.Crud.find((num) => num.id === action.payload.id);
-
-      state.Crud = edit;
-      console.log("edit", edit);
     },
   },
 });
