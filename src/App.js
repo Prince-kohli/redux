@@ -7,7 +7,7 @@ import {
   decrement,
   multiply,
   incrementByAmount,
-} from "./counterSlice/CounterSlice";
+} from "./store/CounterSlice";
 
 function App() {
   const count = useSelector((state) => state.counter.value);

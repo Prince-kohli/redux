@@ -1,10 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
-import counterReducer from "../counterSlice/CounterSlice";
-import crudReducer from "../CrudSlice/CrudSlice";
+import counterReducer from "../store/CounterSlice";
+import CrudReducer from "../store/CrudSlice";
 
 export const store = configureStore({
   reducer: {
     counter: counterReducer,
-    crud: crudReducer,
+    crud: CrudReducer,
   },
 });
